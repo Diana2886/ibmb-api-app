@@ -1,1 +1,4 @@
-<app-card></app-card>
+<h1 class="main-title">Top 250 movies according to IMDb</h1>
+<div class="cards__container">
+    <app-card  *ngFor="let item of (movies$ | async)" [movie]="item"></app-card>
+</div>
