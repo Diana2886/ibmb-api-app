@@ -1,1 +1,10 @@
-<p>card works!</p>
+<h3 class="movie__rank">{{ movie.rank }}</h3>
+<img class="movie__img" [src]="movie.image" alt="movie-img">
+<div class="movie__content">
+  <h2 class="movie__title">{{ movie.title }}</h2>
+  <div class="movie__text">
+    <p class="movie__year"><b>Release year:</b>  {{ movie.year }}</p>
+    <p class="movie__rating"><b>ImDbRating:</b>  {{ movie.imDbRating }}</p>
+    <p class="movie__crew"><b>Crew:</b>  {{ movie.crew }}</p>
+  </div>
+</div>
