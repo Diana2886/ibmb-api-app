@@ -1,5 +1,6 @@
 export interface IMoviesResponse {
   items: IMovie[];
+  errorMessage: string;
 }
 
 export interface IMovie {
